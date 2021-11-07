@@ -1,0 +1,43 @@
+.footer{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.icon{
+    color: #fff;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.icon:hover{    
+  color: #4267B2;
+}
+
+.icon-2{
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon-2:hover{    
+  color: #4267B2;
+}
+
+

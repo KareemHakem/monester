@@ -1,0 +1,81 @@
+.margin {
+  min-height: 130vh;
+}
+.top-bart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
+  width: 80%;
+  margin-left: 5%;
+}
+.left-side img {
+  height: 400px;
+  width: 400px;
+  box-shadow: 0px 3px 3px 0px rgba(204, 201, 192);
+  border-top: 1px solid rgb(226, 220, 220);
+  border-radius: 5px;
+}
+
+.box {
+  height: 320px;
+  width: 400px;
+  border-radius: 5px;
+  border-top: 1px solid rgb(226, 220, 220);
+  box-shadow: 0px 3px 3px 0px rgba(204, 201, 192);
+}
+
+.flex-box {
+  width: 90%;
+  margin-left: 5%;
+  font-size: 45 large;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.line {
+  height: 0;
+  width: 90%;
+  margin-left: 5%;
+  border: 0.7px solid rgb(201, 192, 192);
+  background-color:rgb(201, 192, 192);
+  font-weight: 100;
+  margin-top: 10px;
+  font-size: 100;
+}
+
+.btn-6{
+    height: 60px;
+    width: 250px;
+    font-size: 30px;
+    padding: 10px;
+    background-color: #000 !important;
+    color: #fff !important;
+    margin-left: 80px !important;
+    margin-top: 20px !important;
+    text-transform: uppercase !important;
+}
+
+.btn-6:hover{
+    background-color: #fff !important;
+    color:#000 !important;
+    border: 1px solid black !important;
+}
+
+.Description{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.Description h1{
+   margin-bottom: 5px;
+   font-weight: 100;
+}
+
+.Description p {
+    color: rgba(0, 0, 0, 0.54);
+    width: 500px;
+    font-size: 18px;
+}

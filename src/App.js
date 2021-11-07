@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NavBar from "./Components/navbar/NavBar";
+import Footer from "./Components/Footer/Footer";
+import ProductsPage from "./pages/productsPage/ProductsPage";
+import Cart from "./pages/Cart/Cart";
+import ProductsDetailPage from "./pages/productsDetailPage/productsDetailPage";
+import { Switch, Route } from "react-router-dom";
+import { useState } from "react";
+import Todo from "./pages/Todo";
 
 function App() {
+  const [cart, setCart] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      {/* <Todo /> */}
+      <Switch>
+        <Route exact path="/">
+          <ProductsPage />
+        </Route>
+
+        <Route exact path="/Cart">
+          <Cart cart={cart} setCart={setCart} />
+        </Route>
+        {/* :id the id dynamic */}
+        <Route exact path="/products/:id">
+          <ProductsDetailPage cart={cart} setCart={setCart} />
+        </Route>
+      </Switch>
+      <Footer />
+    </>
   );
 }
 
